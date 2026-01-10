@@ -7,7 +7,7 @@ RUN apt-get update && \
     apt-get install -y curl gpg && \
     curl -fsSL https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS-2023.PUB | gpg --dearmor | tee /root/intel-oneapi-archive-keyring.gpg
 
-FROM debian:bullseye as builder
+FROM debian:13.2 as builder
 
 ARG http_proxy
 ARG https_proxy
