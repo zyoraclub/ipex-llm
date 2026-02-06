@@ -1,3 +1,4 @@
 openai==0.28.0 
 anthropic==0.5.0 
 wandb
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
