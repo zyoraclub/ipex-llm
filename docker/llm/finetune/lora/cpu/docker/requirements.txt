@@ -11,3 +11,4 @@ peft==0.2.0
 gradio
 sentencepiece
 scipy
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
